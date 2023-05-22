@@ -83,20 +83,31 @@ li {
    overflow: hidden;
 }
 
-
+/* Default styles */
 .ql-toolbar.ql-snow {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Add this line to allow items to wrap to new rows */
   width: 80%;
   margin-left: 10%;
   position: sticky;
-  top: 60px;
+  top: 58px;
   border-radius: 20px;
   z-index: 1;
   background: #f3f3f3;
   border: none !important;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
+
+/* Media query for screen zoomed to 125% */
+@media screen and (max-width: 125%) {
+  .ql-toolbar.ql-snow {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+
 .ql-editor{
   cursor: text;
 }
