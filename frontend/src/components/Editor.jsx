@@ -283,8 +283,7 @@ const socketServer = io("https://google-docs-backend-server.onrender.com/");
         <Box className="avatar">
           <a href="https://mail.google.com/">
             <Avatar
-src = "https://img.freepik.com/premium-vector/avatar-profile-colorful-illustration-2_549209-82.jpg?w=2000"
-
+              src="https://img.freepik.com/premium-vector/avatar-profile-colorful-illustration-2_549209-82.jpg?w=2000"
               size="30"
               round={true}
             />
@@ -368,9 +367,7 @@ src = "https://img.freepik.com/premium-vector/avatar-profile-colorful-illustrati
         </List>
       </Box>
       {/* Editor container */}
-      <Box Box className="container" id="container">
-        You can start the typing...
-      </Box>
+      <Box className="container" id="container"></Box>
     </Component>
   );
 };
